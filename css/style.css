@@ -1,0 +1,135 @@
+@import 'https://fonts.googleapis.com/css?family=Chathura:100, 400';
+@import 'https://fonts.googleapis.com/css?family=Abel';
+body {
+	margin: 0;
+	font-weight: 100;
+	font-family: 'Abel';
+	/*
+	background: #FF00A4;
+	background: linear-gradient(#FF00A4, #F808FE) fixed;
+	*/
+}
+#header {
+	width: 100%;
+	height: 230px;
+	float: left;
+}
+#logo {
+	font-family: 'Chathura';
+	font-size: 27px;
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+#logo span {
+	display: block;
+	font-size:15px;
+	text-transform: uppercase;
+	margin-top: -20px;
+}
+#logo img:hover {
+	transform: scale(0.98);
+}
+#content {
+	font-size: 15px;
+	width: 80%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+#content h2 {
+	clear: left;
+	margin-top: 10px;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#content hr {
+	border: 1px dotted rgba(0, 0, 0, 0.1);
+	margin: 30px;
+}
+#footer {
+	width: 80%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 10%;
+	float: left;
+}
+#footer img {
+	float: right;
+}
+.project {
+	width: 80%;
+	margin-left: 10%;
+	height: 120px;
+	background-color: rgba(0, 0, 0, 1);
+	margin-bottom: 20px;
+	background-position: center center;
+	background-size: cover;
+}
+.title-project {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	height: 120px;
+	line-height: 60px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	color: #FFF;
+}
+.title-project a {
+	text-decoration: none;
+	color: #FFF;
+}
+.title-project a:visited {
+	color: #FFF;
+}
+.title-project:hover {
+	background: rgba(0, 0, 0, 0.6);
+}
+.flag {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+#about {
+	text-align: center;
+	text-transform: uppercase;
+}
+#about a img {
+	height: 30px;
+	width: auto;
+	margin: 10px 1px 20px;
+}
+#about p {
+	margin-bottom: 50px;
+}
+#skill {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 12px;
+	text-align: center;
+}
+.progress {
+	height: 30px;
+	position: relative;
+	background: #f5f5f5;
+	padding: 0px;
+	padding: 10px;
+	margin: 5px 0px;
+}
+.progress span {
+	display: block;
+	height: 100%;
+	background: linear-gradient(114deg, rgba(255, 153, 88, 0.5) 0%, #E84E67 100%);
+	position: relative;
+	overflow: hidden;
+}
+.email {
+	font-size: 10px;
+}
+.email::after {
+	content: attr(data-domain);
+}
+.email::before {
+	content: attr(data-user) "\0040";
+}
